@@ -1,0 +1,8 @@
+1,handleChange
+onChange={this.handleChange(e)} // 表示立刻执行一次，与值发生改变才执行不符合
+onChange={e => this.handleChange(e)} // 
+onChange={this.handleChange} // this一定要指向函数
+2, state
+状态是封闭的，只有组件自己能访问和修改
+批量执行，多key一次执行，相同key合并
+可能是异步的，如果要获取最新状态值，4种方式：（1）传递函数给setstate（2）定时器（3）原生事件中 （4）回调函数
