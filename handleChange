@@ -1,0 +1,3 @@
+onChange={this.handleChange(e)} // 表示立刻执行一次，与值发生改变才执行不符合
+onChange={e => this.handleChange(e)} // 
+onChange={this.handleChange} // this一定要指向函数
